@@ -10,12 +10,7 @@
 body {
   background-color: #121214;
 }
-body h1 {
-  font-size: clamp(2rem,2rem + 1vw, 3.625rem);
-}
-body h2 {
-  font-size: clamp(1.6rem, 1rem + 2vw, 2.175rem);
-}
+
 .container {
   display: grid;
   place-content: center;
@@ -67,6 +62,13 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1023px){
   main {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  main {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
